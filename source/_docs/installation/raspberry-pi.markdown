@@ -35,7 +35,7 @@ $ sudo apt-get upgrade -y
 Install the dependencies.
 
 ```bash
-$ sudo apt-get install python3 python3-venv python3-pip
+$ sudo apt-get install python3 python3-venv python3-pip python3-dev
 ```
 
 Add an account for Home Assistant called `homeassistant`.
@@ -64,6 +64,8 @@ $ source bin/activate
 Once you have activated the virtual environment you will notice the prompt change and then you can install Home Assistant.
 
 ```bash
+(homeassistant) homeassistant@raspberrypi:/srv/homeassistant $ pip3 install --upgrade pip
+(homeassistant) homeassistant@raspberrypi:/srv/homeassistant $ pip3 install --upgrade wheel
 (homeassistant) homeassistant@raspberrypi:/srv/homeassistant $ pip3 install homeassistant
 ```
 
